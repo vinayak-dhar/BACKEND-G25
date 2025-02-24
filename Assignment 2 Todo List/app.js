@@ -1,9 +1,7 @@
-
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
-const morgan = require('morgan');
 
 const app = express();
 const PORT = 3000;
@@ -13,13 +11,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-// middleware 
+// logging middleware
 app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
     next();
 });
-
-app.use(morgan('dev'));
 
 const getTasksFromFile = () => {
     try {
@@ -37,6 +33,7 @@ const saveTasksToFile = (tasks) => {
     );
 };
 
+// Routes
 app.get('/', (req, res) => {
     const tasks = getTasksFromFile();
     res.render('index', { tasks });
@@ -108,4 +105,3 @@ app.delete('/api/tasks/:id', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
-
