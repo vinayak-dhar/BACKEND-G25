@@ -55,12 +55,6 @@ h1 {
     font-size: 14px;
 }
 
-.search-icon {
-    position: absolute;
-    right: 10px;
-    top: 40%;
-    transform: translateY(-50%);
-}
 
 #filterSelect {
     padding: 8px;
@@ -70,13 +64,6 @@ h1 {
     color: var(--text-color);
 }
 
-.theme-toggle {
-    padding: 8px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    background-color: var(--card-bg);
-    cursor: pointer;
-}
 
 .task-item {
     display: flex;

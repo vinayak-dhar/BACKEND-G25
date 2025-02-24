@@ -2,16 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const tasksList = document.getElementById('tasksList');
     const searchInput = document.getElementById('searchInput');
     const filterSelect = document.getElementById('filterSelect');
-    const darkModeToggle = document.getElementById('darkModeToggle');
     const addTaskBtn = document.getElementById('addTaskBtn');
     const addTaskModal = document.getElementById('addTaskModal');
     const addTaskForm = document.getElementById('addTaskForm');
     const newTaskInput = document.getElementById('newTaskInput');
 
-    if (localStorage.getItem('darkMode') === 'true') {
-        document.body.classList.add('dark');
-        darkModeToggle.textContent = '☀️';
-    }
 
     const fetchTasks = async () => {
         const searchQuery = searchInput.value;
@@ -45,12 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', fetchTasks);
     filterSelect.addEventListener('change', fetchTasks);
 
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-        const isDark = document.body.classList.contains('dark');
-        localStorage.setItem('darkMode', isDark);
-        darkModeToggle.textContent = isDark ? '☀️' : '🌙';
-    });
 
     addTaskBtn.addEventListener('click', () => {
         addTaskModal.style.display = 'block';

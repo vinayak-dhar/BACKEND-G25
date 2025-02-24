@@ -1,38 +1,20 @@
 [
   {
-    "id": 1,
-    "title": "Complete project documentation",
-    "completed": true,
-    "createdAt": "2024-02-22T10:00:00.000Z"
-  },
-  {
-    "id": 1740326121984,
-    "title": "jbjbjkhkl khkh",
-    "completed": true,
-    "createdAt": "2025-02-23T15:55:21.984Z"
-  },
-  {
-    "id": 1740326158620,
-    "title": "loki",
-    "completed": true,
-    "createdAt": "2025-02-23T15:55:58.620Z"
-  },
-  {
-    "id": 1740373022375,
+    "id": 1740387242987,
     "title": "hello world",
-    "completed": true,
-    "createdAt": "2025-02-24T04:57:02.375Z"
-  },
-  {
-    "id": 1740373029377,
-    "title": "how are you",
-    "completed": true,
-    "createdAt": "2025-02-24T04:57:09.377Z"
-  },
-  {
-    "id": 1740373243966,
-    "title": "hello world2",
     "completed": false,
-    "createdAt": "2025-02-24T05:00:43.966Z"
+    "createdAt": "2025-02-24T08:54:02.987Z"
+  },
+  {
+    "id": 1740387251128,
+    "title": "how are you",
+    "completed": false,
+    "createdAt": "2025-02-24T08:54:11.128Z"
+  },
+  {
+    "id": 1740387262527,
+    "title": "this is the todo list assignment",
+    "completed": false,
+    "createdAt": "2025-02-24T08:54:22.527Z"
   }
 ]
